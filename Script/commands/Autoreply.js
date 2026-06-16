@@ -8,7 +8,7 @@ module.exports.config = {
   name: "autoreplybot",
   version: "2.0.0",
   hasPermssion: 0,
-  credits: "SHAHADAT SAHU",
+  credits: "Shuva Sheikh",
   usePrefix: false,
   commandCategory: "Chat",
   cooldowns: 0
@@ -32,7 +32,7 @@ module.exports.handleEvent = async function ({ api, event }) {
     "good night": "Sebla jat ghumah🐕",
     "tor bal": "Bal bal koros kn tor bal uthe nai🤮",
     "Shuva": "Oni Ahiyan jijur shathe busy amake bol ki hoiche🤡",
-    "owner": "‎[𝐎𝐖𝐍𝐄𝐑:☞ SHAHADAT SAHU ☜\nFacebook: https://www.facebook.com/profile.php?id=100044713412032\nWhatsApp: +8801882333052",
+    "owner": "‎Shuva sheikh chay bot🤍",
     "admin": "She is Shuva Sheikh Take shobai S5 shuva name chine🍒",
     "Magi": "Tor ma magi🖕🏻",
     "chup": "Tui chup kor bessha jat🫩",
@@ -40,9 +40,9 @@ module.exports.handleEvent = async function ({ api, event }) {
     "fork": "",
     "kiss me": "Thap dibo Vagh🙄",
     "Thanks": "Your always welcome mera baccha🤍",
-    "i love you": "মেয়ে হলে আমার বস সাহু এর ইনবক্সে এখুনি গুঁতা দিন🫢😻",
-    "love you": "ভালোবাসা নামক আবলামী করতে চাইলে Boss সাহু এর ইনবক্সে গুতা দিন 😘",
-    "by": "কিরে তুই কই যাস কোন মেয়ের সাথে চিপায় যাবি..!🌚🌶️",
+    "i love you": "Dhur bainchod shob beiman🍑",
+    "love you": "Ignore korlam👌🏻",
+    "bye": "Chuda",
     "Ami shuva": "Yes ma'am you're my owner🤍",
     "bot er baccha": "Amr baccha tor boyfriend er pete🤡",
     "tor nam ki": "My name is Jannat rahman",
@@ -75,7 +75,7 @@ module.exports.handleEvent = async function ({ api, event }) {
         name: this.config.name,
         messageID: info.messageID,
         author: senderID,
-        type: "sahu"
+        type: "Shuva"
       });
     },
     messageID
@@ -107,14 +107,14 @@ module.exports.handleReply = async function ({ api, event, handleReply }) {
           name: module.exports.config.name,
           messageID: info.messageID,
           author: event.senderID,
-          type: "sahu"
+          type: "Shuva"
         });
       },
       event.messageID
     );
 
   } catch {
-    return api.sendMessage("🙂 একটু পরে আবার বলো", event.threadID, event.messageID);
+    return api.sendMessage("Ektu por abr bolun🤍", event.threadID, event.messageID);
   }
 };
 
