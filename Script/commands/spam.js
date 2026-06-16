@@ -1,4 +1,4 @@
-module.exports.config = {
+7module.exports.config = {
   name: "spam",
   version: "1.0.0",
   hasPermssion: 2,
